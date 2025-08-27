@@ -6,13 +6,12 @@ submitbtn.addEventListener("click", function (event) {
     event.preventDefault();
 
     const inputval = inputbox.value;
-    if (!inputval.trim()) return;
 
     const li = document.createElement("li");
     li.innerHTML = `<input type="checkbox" class="tick"> ${inputval} `;
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "❌";
+    deleteBtn.textContent = "x";
     deleteBtn.classList.add("delete-btn");
 
     deleteBtn.addEventListener("click", function () {
