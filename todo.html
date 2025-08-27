@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To_Do</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>To Do List</h1>
+  </header>
+  <center>
+  <div id="todoforms">
+    <input type="text" id="todo-input" placeholder="Enter What To Do" minlength="10" required>
+    <button id="submitbtn">Submit</button>
+  </div>
+  
+  <div class="select">
+      <select name="todos" class="filter">
+      <option value="All">All</option>
+      <option value="Completed">Completed</option>
+      <option value="Incompleted">Incompleted</option>
+      </select>
+  </div>
+  </center>
+  <div class="container">
+   <ul id="resultList"></ul>
+  </div>
+  <script src="./script.js"></script>
+
+</body>
+</html>
